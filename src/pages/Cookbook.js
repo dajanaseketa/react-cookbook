@@ -8,8 +8,6 @@ const Cookbook = () => {
     const [selectedLetter, setSelectedLetter] = useState('a');
 
     const [meals, setMeals] = useState([]);
-    const [areAllMealsVisible, setAreAllMealsVisible] = useState(false);
-    const slicedMeals = meals.slice(0, 5);
 
     const [error, setError] = useState('');
 
@@ -28,11 +26,7 @@ const Cookbook = () => {
         <div className='page-container'>
             <LetterPicker selectedLetter={selectedLetter} setSelectedLetter={setSelectedLetter} />
             <Header/>
-            {areAllMealsVisible ? 
-                meals.map(meal => <MealRow meal={meal} key={meal.idMeal} />) : 
-                slicedMeals.map(meal => <MealRow meal={meal} key={meal.idMeal} />)
-            }
-            {meals.length > 5 && <button className="table-button" onClick={() => setAreAllMealsVisible(!areAllMealsVisible)}>Show {areAllMealsVisible ? 'less' : 'more'}...</button>}
+            {meals.map(meal => <MealRow meal={meal} key={meal.idMeal} />)}
         </div>
     )
 }
