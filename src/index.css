@@ -11,3 +11,165 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.page-container {
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0px;
+}
+
+/* ------------------------------------------ Empty Content --------------------------------------- */
+
+.empty-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.empty-content-image {
+  padding-top: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+/* ------------------------------------------ Cookbook page --------------------------------------- */
+
+/* ------------------------ Letter Picker ------------------------ */
+
+.letter-picker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.letter {
+  cursor: pointer;
+}
+
+.letter-selected {
+  color: #e92121f5;
+  font-size: 32px;
+}
+
+/* ------------------------ Table ------------------------ */
+.header {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #de161671;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #de161671;
+}
+
+.row:hover {
+  background-color: #de161607;
+}
+
+.meal-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-field {
+  width: 60px;
+  padding-inline: 20px;
+}
+
+.large-field {
+  width: 170px;
+  padding-inline: 30px;
+}
+
+.table-button {
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #de161671;
+  padding: 10px;
+  margin-block: 25px;
+}
+
+.table-button:hover {
+  background-color: #de161607;
+}
+
+/* ------------------------------------------ Meal page --------------------------------------- */
+
+.meal-cover-image {
+  height: 400px;
+  width: 100%; 
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.meal-title {
+  color: #e92121f5;
+  padding: 40px;
+  text-align: start;
+}
+
+.meal-info-container {
+  display: flex;
+  gap: 60px;
+  padding-inline: 40px;
+  text-align: start;
+}
+
+.ingredients-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ingredients-container-header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy-to-clipboard-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.ingredients-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ingredients-list > li {
+  padding-block: 5px;
+}
+
+.instructions-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
