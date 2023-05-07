@@ -1,8 +1,5 @@
-import { Link } from "react-router-dom";
-
 const MealRow = ({meal, onMealSelect}) => {
     return (
-        <Link to={`/${meal.idMeal}`} target="_blank">
             <div className='row'>
                 <div className='field small-field'>
                     <img alt={meal.strMeal} className="meal-image" src={meal.strMealThumb} />
@@ -17,7 +14,6 @@ const MealRow = ({meal, onMealSelect}) => {
                     {meal.strArea}
                 </div>
             </div>
-        </Link>
     )
 }
 
