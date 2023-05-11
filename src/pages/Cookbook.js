@@ -3,7 +3,7 @@ import getMealsByFirstLetter from "../api/meals/getMealsByFirstLetter";
 import LetterPicker from "../components/LetterPicker";
 import MealRow from "../components/MealRow";
 import Header from "../components/Header";
-import { EmptyContent } from "../components/EmptyContent";
+import EmptyContent from "../components/EmptyContent";
 
 const Cookbook = () => {
     const [selectedLetter, setSelectedLetter] = useState('a');

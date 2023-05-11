@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import IngredientsList from "../components/IngredientsList";
 import MealInstructions from "../components/MealInstructions";
-import { EmptyContent } from "../components/EmptyContent";
+import EmptyContent from "../components/EmptyContent";
 import getMeal from "../api/meal/getMeal";
 
 const Meal = () => {
